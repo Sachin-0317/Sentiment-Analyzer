@@ -1,7 +1,11 @@
 import streamlit as st
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+import nltk
 import pandas as pd
 from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+
+nltk.download('vader_lexicon')
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import matplotlib.pyplot as plt
 import io
 
