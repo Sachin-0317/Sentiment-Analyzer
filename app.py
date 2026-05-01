@@ -1,3 +1,6 @@
+import subprocess
+import sys
+subprocess.run([sys.executable, "-m", "pip", "install", "nltk", "wordcloud", "matplotlib"], capture_output=True)
 import streamlit as st
 import nltk
 import pandas as pd
